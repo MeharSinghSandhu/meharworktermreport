@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade, Zoom, and Tabs Effect</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        .fade-out {
+            opacity: 0;
+            transition: opacity 1s ease-out;
+        }
+        .hidden {
+            display: none;
+        }
+        #black-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .top-banner {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 12vh; /* Change to 25% height */
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+            font-family: Helvetica, Arial, sans-serif;
+            z-index: 999;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Black Screen with Text -->
+    <div id="black-screen">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold">Work Term Report</h1> 
+            <p class="text-xl mt-2">- by Mehar Singh</p>
+        </div>
+    </div>
+
+    <!-- Top Banner -->
+    <div class="top-banner">
+        Project Curriculum Developer
+    </div>
+    
+    <div class="bg-white bg-opacity-60 shadow-md p-1 rounded-lg  "></div>
+
+    <!-- Main Content with Image and Uneven Tabs -->
+    <div class="bg-black p-2 grid grid-cols-3 gap-4 justify-center">
+        
+        <!-- Tab 1 -->
+        <div class="bg-white bg-opacity-60 shadow-md p-1 rounded-lg w-205 h-70">
+            <h2 class="text-l font-bold text-gray-800">
+            <p class="text-gray-800">During my 4-month co-op work term as a Project Curriculum Developer at the Engineering Department, University of Guelph, I collaborated with a professor and three teammates to design and refine the curriculum for a first-year Engineering course (ENGG 1150). In this website, I will reflect on my learning experiences, the challenges I faced, and the creative solutions we developed to support the students’ learning experience.</p>
+        </div>
+
+        <!-- Image (In between the tiles) -->
+        <div class="flex  ">
+            <img src="engg building.jpg" alt="Organization Logo" >
+        </div>
+
+        <!-- Tab 2 -->
+        <div class="bg-white bg-opacity-60 shadow-lg p-1 rounded-lg w-200 h-80">
+            <h2 class="text-l font-bold text-gray-800">
+            <p class="text-gray-800">The University of Guelph's Engineering Department focuses on giving students hands-on experiences with real-world projects. In the first-year curriculum, students work on design challenges that combine mechanical and computing skills, like the “Teddy Bear Wheelchair” project. The department encourages practical learning, and we worked in the design lab in the Thornbrough building, where we brainstormed, designed, and tested our projects.</p>
+        </div>
+        </div>
+        <div class="bg-black p-2 grid grid-cols-2 gap-4 justify-center">
+        <!-- Tab 3 -->
+        <div class="bg-white bg-opacity-60 shadow-xl p-1 rounded-lg w- h-85">
+            <h2 class="text-l font-bold text-gray-800">
+            <p class="text-gray-800">Q- What were your goals/learning outcomes for this work term?<br><br>Learning Goal 1: Oral Communication<br>Action Plan: I actively participated in meetings, sought feedback on my communication style, and practiced presenting updates to the team.
+               <br> Measure of Success: I observed positive feedback from the professor and teammates, especially regarding clearer communication and a more collaborative team dynamic.
+               <br> <br>Learning Goal 2: Creative Thinking<br>Action Plan: I engaged in brainstorming sessions, researched design concepts, and worked on prototype testing.
+                <br>Measure of Success: I successfully contributed creative solutions during the design of the wheelchair project, which received positive feedback from the team.
+            </p>
+            </div>
+
+        
+
+        <!-- Tab 4 -->
+        <div class="bg-white bg-opacity-60 shadow-md p-6 rounded-lg w h-85">
+            <h2 class="text-l font-bold text-gray-800">
+            <p class="text-gray-800">Learning Goal 3: Leadership Skills.<br>Action Plan: I took on responsibilities to align tasks, set deadlines, and resolve any minor conflicts within the team.
+                <br>Measure of Success: Feedback from the team reflected my growth as a leader, and I was able to foster a collaborative work environment.
+            <br><br>Q- What skills did you want to learn? How will these tasks benefit your next work experience?<br>
+
+            I wanted to learn more about working with hardware, like Arduinos, motors, sensors, and 3D printers, since that was new to me as a Computer Science student. These skills will help me in the future by giving me hands-on experience with projects that combine software and physical devices, and making me more confident in teams. Overall, it’s made me more prepared for different types of projects.</p>
+        </div>
+        </div>
+        <div class="bg-black p-2 grid grid-cols-3 gap-4 justify-center">
+        
+            <!-- Tab 5 -->
+            <!-- Tab 5 -->
+        <div class="bg-white bg-opacity-60 shadow-md p-1 rounded-lg h-2/3">
+            <h2 class="text-l font-bold text-gray-800">
+            <p class="text-gray-800">
+                Q- What technologies did you want to work with and why?<br><br>
+                I wanted to work with hardware technologies like Arduinos, motors, sensors, and 3D printers because they were new to me as a Computer Science student. Working with 3D printers taught me how to use SolidWorks and operate the machines, while I also learned to code sensors using Arduinos. These were very useful technologies, giving me hands-on experience in combining software with physical devices. I wanted to explore these tools to make myself more versatile and better prepared for future engineering and tech projects.
+            </p>
+        </div>
+
+    
+            <!-- Image (In between the tiles) -->
+            <div class="flex h-auto  ">
+                <img src="finalproject.jpg" alt="Organization Logo"  >
+            </div>
+    
+            <!-- Tab 6 -->
+            <div class="bg-white bg-opacity-60 shadow-lg p-1 rounded-lg w-200 h-100 ">
+                <h2 class="text-l font-bold text-gray-800">
+                <p class="text-gray-800">Q- Give an overview of your job or project. Highlight the most interesting or unique aspects of your job. What skills did you need for the job? Did you learn them in class or on the job? <br><br>We worked on various tasks, including managing lab inventory, ordering new parts, and learning how to utilize AI for reflections and projects. This involved controlling AI tools, brainstorming ideas, documenting them, and rating each idea using a weighted criteria system to prioritize important aspects and identify the best solutions. This approach fostered creativity and helped us design an effective project rubric. Our final project, the "Teddy Bear Wheelchair," featured a car with a teddy bear on top that could climb an incline with weights attached to its back and launch garbage into a bin.</p>
+                    <br><br>I would like to acknowledge Prof. Stephen Mattucci for his invaluable guidance and support throughout this project.
+            </div>
+            </div>
+        
+
+    <!-- JavaScript to trigger fade out and zoom in -->
+    <script>
+        // Wait 1 second before fading out the black screen
+        setTimeout(() => {
+            const blackScreen = document.getElementById('black-screen');
+            blackScreen.classList.add('fade-out');
+
+            // After the fade-out effect (1 second), hide the black screen
+            setTimeout(() => {
+                blackScreen.classList.add('hidden'); // Ensure it's not blocking the main content
+            }, 1000);
+        }, 1000);
+    </script>
+</body>
+</html>
